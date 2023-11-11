@@ -28,6 +28,11 @@
             bindings = <&tog 3>;
             key-positions = <38 39>;
         };
+
+        caps {
+            bindings = <&caps_word>;
+            key-positions = <16 19>;
+        };
     };
 
     macros {
@@ -50,10 +55,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE         &kp Q        &kp W         &kp E        &kp R          &kp T          &kp Y        &kp U          &kp I        &kp O         &kp P           &kp PIPE
-&bhm LC(F24) PLUS  &bhm LGUI A  &bhm LCTRL S  &bhm LALT D  &bhm LSHIFT F  &kp G          &kp H        &bhm RSHIFT J  &bhm LALT K  &bhm RCTRL L  &bhm RGUI SEMI  &none
-&kp MINUS          &kp Z        &kp X         &kp C        &kp V          &kp B          &kp N        &kp M          &kp COMMA    &kp DOT       &kp FSLH        &kp UNDER
-                                              &kp TAB      &kp BSPC       &lt 2 ENTER    &lt 1 SPACE  &kp SQT        &kp GRAVE
+&kp ESCAPE         &kp Q        &kp W         &kp E        &kp R          &kp T          &kp Y         &kp U          &kp I               &kp O         &kp P           &kp PIPE
+&bhm LC(F24) PLUS  &bhm LGUI A  &bhm LCTRL S  &bhm LALT D  &bhm LSHIFT F  &kp G          &kp H         &bhm RSHIFT J  &bhm LALT K         &bhm RCTRL L  &bhm RGUI SEMI  &none
+&kp MINUS          &kp Z        &kp X         &kp C        &kp V          &kp B          &bhm K_CUT N  &bhm K_COPY M  &bhm K_PASTE COMMA  &kp DOT       &kp FSLH        &kp UNDER
+                                              &kp TAB      &kp BSPC       &lt 2 ENTER    &lt 1 SPACE   &kp SQT        &kp GRAVE
             >;
         };
 
@@ -65,10 +70,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTRK     &kp SLASH  &none        &bt BT_CLR  &none           &kp UP_ARROW    &none      &kp C_NEXT        &kp C_VOLUME_UP
-&kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &kp MINUS  &none        &bt BT_NXT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp C_PREVIOUS    &kp C_VOLUME_DOWN
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp EQUAL  &email       &bt BT_PRV  &none           &none           &none      &kp C_PLAY_PAUSE  &kp C_MUTE
-                                          &kp LGUI      &none      &kp ENTER    &kp SPACE   &none           &kp RALT
+&kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTRK     &kp SLASH   &email       &bt BT_CLR  &none           &kp UP_ARROW    &none      &kp C_NEXT        &kp C_VOLUME_UP
+&kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &kp MINUS   &none        &bt BT_NXT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp C_PREVIOUS    &kp C_VOLUME_DOWN
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp PERIOD  &kp EQUAL    &bt BT_PRV  &none           &none           &none      &kp C_PLAY_PAUSE  &kp C_MUTE
+                                          &kp LGUI      &none       &kp ENTER    &kp SPACE   &none           &kp RALT
             >;
         };
 
